@@ -1,0 +1,321 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 > lint("src/calc_degrees_goW.R")\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:3:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   \
+ ^~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:6:68: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   You need to run this function first before you can run the more \
+                                                                   ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:7:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   complicated functions in this project: (calc_dims, draw_final_map, evaluation_step).\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:8:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   For more information about this type of analysis, see the reference publication\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:17:31: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   their weighted equivalents \
+                              ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:19:79: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#         by which the concept/node is connected to others taking into account \
+                                                                              ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:20:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#         the weight of the relations. This is calculated as the sum of the weights\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:22:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -indegree: the number of relations/edges feeding into a concept/node taking\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:25:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#         taking into account their weight(sum of weights of all outgoing relations)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:26:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -the weighted goal-orientation (gow): (W indegree - W outdegree)/W degree\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:27:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       \
+ ^~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:28:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       \
+ ^~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:29:73: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   The function takes an edgelist including all relations in a CM and a \
+                                                                        ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:30:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   nodelist including all nodes/concepts in the CM (both df). The data needs to \
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:30:81: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   nodelist including all nodes/concepts in the CM (both df). The data needs to \
+                                                                                ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:31:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   have the following column structure (the column order is also important). The \
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:31:82: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   have the following column structure (the column order is also important). The \
+                                                                                 ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:32:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   columns with an * include the meta-data and are optional. For other research-\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:33:57: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   projects, other types of meta-data may be important. \
+                                                        ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:35:14: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   nodelist: \
+             ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:38:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       \
+ ^~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:39:14: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   edgelist: \
+             ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:40:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -from: the 'cause'-node/concept id (corresponding to the id in the nodeslist)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:41:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -to: the 'effect'-node/concept id (corresponding to the id in the nodeslist)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:42:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -weight: the weight of the edge/relation (the number of times the relation\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:44:76: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       -map_id: a unique id for the source (speech/text/respondent) the CM \
+                                                                           ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:46:80: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       -map_date: the date of the source (speech/text/survey)the CM is derived \
+                                                                               ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:48:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       \
+ ^~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:55:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   For the function to return and store the following output a df with the values, \
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:55:84: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   For the function to return and store the following output a df with the values, \
+                                                                                   ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:56:78: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   you need to insert the following codes below the function in your script: \
+                                                                             ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:57:9: style: [commented_code_linter] Commented code should be removed.\
+#       - node_calc_name_period <- calc_degrees_goW(edgelist, nodelist)\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:62:1: style: [object_name_linter] Variable and function name style should be snake_case or symbols.\
+calc_degrees_goW <- function(edgelist, nodelist) \{\
+^~~~~~~~~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:65:10: warning: [object_usage_linter] no visible global function definition for \'91graph_from_data_frame\'92\
+  map <- graph_from_data_frame(d = edgelist, vertices = nodelist, directed = TRUE)\
+         ^~~~~~~~~~~~~~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:65:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+  map <- graph_from_data_frame(d = edgelist, vertices = nodelist, directed = TRUE)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:68:10: warning: [object_usage_linter] no visible global function definition for \'91degree\'92\
+  deg <- degree(map, mode = "all") #degrees (centrality in CM speech)\
+         ^~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:69:12: warning: [object_usage_linter] no visible global function definition for \'91degree\'92\
+  indeg <- degree(map, mode = "in") #indegrees\
+           ^~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:70:13: warning: [object_usage_linter] no visible global function definition for \'91degree\'92\
+  outdeg <- degree(map, mode = "out") #outdegrees\
+            ^~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:71:14: warning: [object_usage_linter] no visible global function definition for \'91strength\'92\
+  w_indeg <- strength(map, mode = "in") #weighted indegrees \
+             ^~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:71:60: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  w_indeg <- strength(map, mode = "in") #weighted indegrees \
+                                                           ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:72:15: warning: [object_usage_linter] no visible global function definition for \'91strength\'92\
+  w_outdeg <- strength(map, mode = "out") #weighted outdegrees\
+              ^~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:73:12: warning: [object_usage_linter] no visible global function definition for \'91strength\'92\
+  w_deg <- strength(map, mode = "all") #weighted degrees (saliency in CM speech)\
+           ^~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:74:1: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  \
+^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:77:1: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  \
+^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:78:56: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#link vectors with all the (weighted) degrees values to \
+                                                       ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:79:33: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#the new node_calc df as columns  \
+                                ^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:86:1: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  \
+^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:88:16: warning: [object_usage_linter] no visible global function definition for \'91mutate\'92\
+  node_calc <- mutate(node_calc, \
+               ^~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:88:33: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  node_calc <- mutate(node_calc, \
+                                ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:89:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+                      go = (node_calc$indegree - node_calc$outdegree) / node_calc$degree,\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:90:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+                      gow = (node_calc$w_indegree - node_calc$w_outdegree) / node_calc$w_degree)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:91:1: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  \
+^~\
+> c <- lint("src/calc_degrees_goW.R")\
+> View(c)\
+> c\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:3:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   \
+ ^~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:6:68: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   You need to run this function first before you can run the more \
+                                                                   ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:7:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   complicated functions in this project: (calc_dims, draw_final_map, evaluation_step).\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:8:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   For more information about this type of analysis, see the reference publication\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:17:31: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   their weighted equivalents \
+                              ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:19:79: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#         by which the concept/node is connected to others taking into account \
+                                                                              ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:20:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#         the weight of the relations. This is calculated as the sum of the weights\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:22:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -indegree: the number of relations/edges feeding into a concept/node taking\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:25:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#         taking into account their weight(sum of weights of all outgoing relations)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:26:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -the weighted goal-orientation (gow): (W indegree - W outdegree)/W degree\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:27:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       \
+ ^~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:28:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       \
+ ^~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:29:73: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   The function takes an edgelist including all relations in a CM and a \
+                                                                        ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:30:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   nodelist including all nodes/concepts in the CM (both df). The data needs to \
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:30:81: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   nodelist including all nodes/concepts in the CM (both df). The data needs to \
+                                                                                ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:31:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   have the following column structure (the column order is also important). The \
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:31:82: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   have the following column structure (the column order is also important). The \
+                                                                                 ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:32:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   columns with an * include the meta-data and are optional. For other research-\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:33:57: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   projects, other types of meta-data may be important. \
+                                                        ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:35:14: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   nodelist: \
+             ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:38:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       \
+ ^~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:39:14: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   edgelist: \
+             ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:40:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -from: the 'cause'-node/concept id (corresponding to the id in the nodeslist)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:41:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -to: the 'effect'-node/concept id (corresponding to the id in the nodeslist)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:42:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#       -weight: the weight of the edge/relation (the number of times the relation\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:44:76: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       -map_id: a unique id for the source (speech/text/respondent) the CM \
+                                                                           ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:46:80: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       -map_date: the date of the source (speech/text/survey)the CM is derived \
+                                                                               ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:48:2: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#       \
+ ^~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:55:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+#   For the function to return and store the following output a df with the values, \
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:55:84: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   For the function to return and store the following output a df with the values, \
+                                                                                   ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:56:78: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#   you need to insert the following codes below the function in your script: \
+                                                                             ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:57:9: style: [commented_code_linter] Commented code should be removed.\
+#       - node_calc_name_period <- calc_degrees_goW(edgelist, nodelist)\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:62:1: style: [object_name_linter] Variable and function name style should be snake_case or symbols.\
+calc_degrees_goW <- function(edgelist, nodelist) \{\
+^~~~~~~~~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:65:10: warning: [object_usage_linter] no visible global function definition for \'91graph_from_data_frame\'92\
+  map <- graph_from_data_frame(d = edgelist, vertices = nodelist, directed = TRUE)\
+         ^~~~~~~~~~~~~~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:65:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+  map <- graph_from_data_frame(d = edgelist, vertices = nodelist, directed = TRUE)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:68:10: warning: [object_usage_linter] no visible global function definition for \'91degree\'92\
+  deg <- degree(map, mode = "all") #degrees (centrality in CM speech)\
+         ^~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:69:12: warning: [object_usage_linter] no visible global function definition for \'91degree\'92\
+  indeg <- degree(map, mode = "in") #indegrees\
+           ^~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:70:13: warning: [object_usage_linter] no visible global function definition for \'91degree\'92\
+  outdeg <- degree(map, mode = "out") #outdegrees\
+            ^~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:71:14: warning: [object_usage_linter] no visible global function definition for \'91strength\'92\
+  w_indeg <- strength(map, mode = "in") #weighted indegrees \
+             ^~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:71:60: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  w_indeg <- strength(map, mode = "in") #weighted indegrees \
+                                                           ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:72:15: warning: [object_usage_linter] no visible global function definition for \'91strength\'92\
+  w_outdeg <- strength(map, mode = "out") #weighted outdegrees\
+              ^~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:73:12: warning: [object_usage_linter] no visible global function definition for \'91strength\'92\
+  w_deg <- strength(map, mode = "all") #weighted degrees (saliency in CM speech)\
+           ^~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:74:1: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  \
+^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:77:1: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  \
+^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:78:56: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#link vectors with all the (weighted) degrees values to \
+                                                       ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:79:33: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+#the new node_calc df as columns  \
+                                ^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:86:1: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  \
+^~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:88:16: warning: [object_usage_linter] no visible global function definition for \'91mutate\'92\
+  node_calc <- mutate(node_calc, \
+               ^~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:88:33: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.\
+  node_calc <- mutate(node_calc, \
+                                ^\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:89:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+                      go = (node_calc$indegree - node_calc$outdegree) / node_calc$degree,\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:90:81: style: [line_length_linter] Lines should not be more than 80 characters.\
+                      gow = (node_calc$w_indegree - node_calc$w_outdegree) / node_calc$w_degree)\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\
+/Users/kimkikstra/Documents/CM_analysis/src/calc_degrees_goW.R:91:1: style: [trailing_whitespace_linter] Trailing whitespace is superfluous.}
